@@ -21,7 +21,7 @@ export function Memes() {
   const getMeme = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/memes/random"
+        `${import.meta.env.VITE_API_URL}/api/memes/random`
       );
 
       const data = await response.json();
