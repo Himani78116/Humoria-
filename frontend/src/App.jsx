@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from 'react';
 import { Memes } from './meme.jsx';
 import { Jokes } from './jokes.jsx';
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceLaugh } from "@fortawesome/free-solid-svg-icons";
@@ -79,13 +79,13 @@ function App() {
     <div className="container">
       {/* <Jokes />
       <Memes /> */}
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/jokes" element={<Jokes />} />
           <Route path="/meme" element={<Memes />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
     <div className="upper">
       <div className="laugh">
