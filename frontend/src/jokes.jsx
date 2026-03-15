@@ -56,7 +56,7 @@ export function Jokes() {
     
       const getJoke = async () => {
         try {
-          const response = await fetch(`http://localhost:8000/api/joke/random?category=${category}`);
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/joke/random?category=${category}`);
           const data = await response.json();
           
           setJoke(data.joke || data.text);
