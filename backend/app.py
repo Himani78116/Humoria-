@@ -14,8 +14,8 @@ app = FastAPI()
 # CORS middleware (allows React to call this)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173",                 # local dev
-        "https://humoria-6bon.vercel.app" ],  # React dev server
+    allow_origins=["http://localhost:5173"],                 # local dev
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
