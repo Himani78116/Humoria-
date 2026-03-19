@@ -19,6 +19,7 @@ app.add_middleware(
         "https://humoria-6bon.vercel.app",
         "https://humoria-6bon-m9obhfxdp-himanis-projects-7217791a.vercel.app",
     ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
