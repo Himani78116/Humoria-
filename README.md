@@ -1,16 +1,36 @@
-# React + Vite
+## Humoria — Joke & Meme Generator:
+Humoria is a fun web application that generates clean jokes and memes instantly.
+It combines a modern frontend with a backend API to deliver random humor content in real time.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo:
+https://humoria-6bon.vercel.app/
 
-Currently, two official plugins are available:
+## Features:
+Random Joke Generator 
+Meme Generator
+Fully deployed(Vercel + Render)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack:
+# Frontend:
+React/Vite
+CSS
+Hosted on Vercel
 
-## React Compiler
+# Backend:
+FastAPI
+Hosted on Render
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Setup
+### Backend
+- Install dependencies: `pip install -r backend/requirements.txt`
+- Set up your `.env` file with `HUMOR_API_KEY=your_key_here`
+- Run: `uvicorn Backend.app:app --reload`
 
-## Expanding the ESLint configuration
+### Frontend
+Navigate to Frontend/
+Run npm install to install React, Vite, etc.
+Run npm run dev to start the development server (typically on http://localhost:5173)
+Note to ensure the backend is running on port 8000 for the API calls.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+- Start the backend, then open the frontend in a browser.
